@@ -1,0 +1,20 @@
+name: my-workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+       - main
+
+jobs:
+   my-first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: exicute the cammand pwd
+        run: pwd
+
+   my-second-job:
+      runs-on: ubuntu-latest
+      steps:
+       - name: exicute date cammand
+         run: date
