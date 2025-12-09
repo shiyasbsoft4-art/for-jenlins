@@ -1,9 +1,7 @@
 name: my-workflow
 
 on:
-  push:
-    branches:
-       - main
+  workflow_dispatch:
 
 jobs:
   exicuting-the-cammand:
